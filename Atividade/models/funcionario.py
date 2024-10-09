@@ -7,6 +7,7 @@ class Funcionario(ABC):
         self.telefone = self._verificar_telefone(telefone)
         self.email = self._verificar_email(email) 
         self.salario = self._verificar_salario(salario)
+        self.endereco = endereco
 
     def _verificar_nome(self, valor):
         self._verificar_nome_tipo_invalido(valor)
